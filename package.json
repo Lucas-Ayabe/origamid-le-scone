@@ -1,0 +1,6 @@
+{
+  "name": "le-scone",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}
