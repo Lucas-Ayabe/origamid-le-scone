@@ -1,0 +1,41 @@
+// Variables
+$cols: 12;
+$gutter: 20px;
+
+// Breakpoints
+$lg: 1200px;
+$md: 760px;
+$sm: 480px;
+
+$breakpoints: (
+    lg: $lg,
+    md: $md,
+    sm: $sm,
+);
+
+// Box-sizing
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Mixins
+@mixin min-width($size) {
+    @media screen and (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+p {
+    color: blue;
+
+    @include min-width(sm) {
+        color: aqua;
+    }
+
+    @include min-width(md) {
+        color: pink;
+    }
+}

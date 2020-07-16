@@ -52,4 +52,24 @@ table {
   border-spacing: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  color: blue;
+}
+@media screen and (min-width: 480px) {
+  p {
+    color: aqua;
+  }
+}
+@media screen and (min-width: 760px) {
+  p {
+    color: pink;
+  }
+}
+
 /*# sourceMappingURL=/styles.5c8f3eab.css.map */
